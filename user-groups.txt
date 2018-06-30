@@ -1,0 +1,12 @@
+groupadd --gid 54321 oinstall
+groupadd --gid 54322 dba
+groupadd --gid 54323 asmdba
+groupadd --gid 54324 asmoper
+groupadd --gid 54325 asmadmin
+groupadd --gid 54326 oper
+groupadd --gid 54327 backupdba
+groupadd --gid 54328 dgdba
+groupadd --gid 54329 kmdba
+groupadd --gid 54330 racdba
+useradd --uid 54321 --gid oinstall --groups dba,oper,asmdba,racdba,backupdba,dgdba,kmdba oracle
+useradd --uid 54322 --gid oinstall --groups dba,asmadmin,asmdba,asmoper,racdba grid
